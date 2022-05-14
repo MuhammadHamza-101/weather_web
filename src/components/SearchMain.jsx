@@ -49,7 +49,9 @@ function SearchMain() {
             onChange={(e) => seText(e.target.value)}
           />
         </div>
-        <button className="searchButton">Search</button>
+        <button className="searchButton" onClick={getWeatherInfio}>
+          Search
+        </button>
       </div>
       <WeatherDetailes {...weather} />
     </>
